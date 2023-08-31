@@ -1,5 +1,5 @@
-import Reveal from "../components/Reveal";
-import RevealImage from "../components/RevealImage";
+import Reveal from "@/components/Reveal";
+import RevealImage from "@/components/RevealImage";
 import Image from "next/image";
 
 export default function Projects() {

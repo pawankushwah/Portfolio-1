@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import Reveal from "../components/Reveal";
-import RevealImage from "../components/RevealImage";
+import Reveal from "@/components/Reveal";
+import RevealImage from "@/components/RevealImage";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from "./Header";
-import Reveal from "../components/Reveal";
-import RevealImage from "../components/RevealImage";
+import Reveal from "@/components/Reveal";
+import RevealImage from "@/components/RevealImage";
 
 export default function Bio() {
   return (

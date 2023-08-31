@@ -5,7 +5,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Projects from "./Projects";
 import MyStack from "./MyStack";
-import ScrollToTopButton from "../components/scrollToTopButton";
+import ScrollToTopButton from "@/components/scrollToTopButton";
 
 export default function Home() {
   return (
