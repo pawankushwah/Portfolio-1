@@ -1,25 +1,29 @@
 import Reveal from "../components/Reveal";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Contact() {
   const form = useRef(null);
-  const serviceID = "default_service";
-  const templateID = "portfolio_contact_form";
+  const [submitBtnValue, setSubmitBtnValue] = useState("Send Message")
 
-  const sendEmail = async (e:any) => {
+  async function sendEmail(e:any) {
     e.preventDefault();
-
+    const serviceID = "default_service";
+    const templateID = "portfolio_contact_form";
+  
     try {
+      setSubmitBtnValue("sending...");
       const result = await emailjs.sendForm(
         serviceID,
         templateID,
-        form.current,
+        e.target,
         "oBRK721pGqPwruDL4"
       );
-      console.log(result.text);
+      setSubmitBtnValue("Send Message");
+      alert("Message Sent");
+      e.target.reset();
     } catch (error:any) {
-      console.log(error.text);
+      alert("Unable to send Message"+ error);
     }
   };
 
@@ -97,7 +101,7 @@ export default function Contact() {
         </Reveal>
         <Reveal style="w-fit overflow-hidden w-1/2 m-auto">
           <button className="p-2 text-white bg-yellow-600 hover:bg-yellow-500 rounded-lg">
-            Send Message
+            {submitBtnValue}
           </button>
         </Reveal>
       </form>
