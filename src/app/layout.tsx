@@ -1,7 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
-import Script from 'next/script'
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],

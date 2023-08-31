@@ -1,4 +1,4 @@
-import Reveal from "@/components/Reveal";
+import Reveal from "../components/Reveal";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 

@@ -4,7 +4,7 @@ import Bio from "./Bio";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Projects from "./Projects";
-import MyStack from "./myStack";
+import MyStack from "./MyStack";
 
 export default function Home() {
   return (

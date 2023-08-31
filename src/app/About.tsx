@@ -1,4 +1,4 @@
-import Reveal from "@/components/Reveal"
+import Reveal from "../components/Reveal"
 
 export default function About() {
   return (
