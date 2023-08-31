@@ -1,10 +1,25 @@
+import Reveal from "@/components/Reveal"
+
 export default function About() {
   return (
-    <div className="min-h-[70vh] p-5 flex flex-col justify-center items-center text-black bg-gray-300" id="About">
-      <div className="text-7xl font-bold text-center text-blue-400 py-10">About</div>
-      <div className="text-center text-xl w-full md:w-1/2">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quam illum dolorum earum esse dignissimos? Corporis, totam, ad dolorem atque vero vitae deserunt possimus quasi nemo, saepe eveniet officiis dignissimos.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eum voluptatem eos quisquam deserunt magni quibusdam, temporibus sed consectetur. Nam maxime repellat totam, placeat dolore laboriosam dolor iusto eius voluptate!lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolor, id qui officiis, esse perferendis velit aliquid a sint dolores alias impedit rerum illo sequi quibusdam dolorem perspiciatis aut porro.
+    <div
+      className="flex flex-col justify-center text-black bg-white"
+      id="About"
+    >
+      <Reveal>
+      <div className="text-7xl lg:text-9xl font-bold text-center bg-blue-500 text-white w-screen py-10">
+        About
       </div>
+      </Reveal>
+      <Reveal>
+      <div className="text-center text-xl md:text-3xl md:w-[90%] md:mx-auto p-10">
+        A passionate web developer with a focus on crafting dynamic digital
+        experiences. My toolkit includes ReactJS and NextJS for building
+        engaging front-end interfaces, complemented by the versatility of
+        Tailwind CSS for sleek designs. On the backend, I harness the power of
+        MongoDB to create data-driven and efficient applications.
+      </div>
+        </Reveal>
     </div>
-  )
+  );
 }
