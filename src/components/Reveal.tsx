@@ -19,7 +19,7 @@ export default function Reveal({ children, style="w-fit overflow-hidden", delay=
       mainContentControl.start("visible");
       greenSlideControl.start("hidden");
     }
-  }, [isInView])
+  }, [isInView, greenSlideControl, mainContentControl])
   return (
     <div ref={mainElementRef} className={`relative ${style}`} >
       <motion.div

@@ -20,7 +20,7 @@ export default function Bio() {
             </Reveal>
             <Reveal>
               <>
-                <div className="text-purple-500 font-bold text-4xl sm:text-5xl md:text-3xl text-center md:text-left">
+                <div className="text-white font-bold text-4xl sm:text-5xl md:text-3xl text-center md:text-left">
                   I&apos;m a Web Developer
                 </div>
               </>
