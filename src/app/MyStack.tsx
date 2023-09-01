@@ -22,30 +22,30 @@ export default function MyStack() {
       </div>
       </Reveal>
       <Reveal style="w-full overflow-hidden">
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 justify-center items-center gap-2 select-none p-10 text-7xl">
-          <FontAwesomeIcon icon={faHtml5} className="text-red-400" />
-          <FontAwesomeIcon icon={faCss3Alt} className="text-blue-400" />
-          <FontAwesomeIcon icon={faSquareJs} className="text-yellow-400" />
-          <FontAwesomeIcon icon={faReact} className="text-blue-400" />
-          <FontAwesomeIcon icon={faNodeJs} className="text-green-500" />
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 justify-center items-center text-center gap-2 select-none p-10 text-7xl">
+          <FontAwesomeIcon icon={faHtml5} className="text-red-400 m-auto" />
+          <FontAwesomeIcon icon={faCss3Alt} className="text-blue-400 m-auto" />
+          <FontAwesomeIcon icon={faSquareJs} className="text-yellow-400 m-auto" />
+          <FontAwesomeIcon icon={faReact} className="text-blue-400 m-auto" />
+          <FontAwesomeIcon icon={faNodeJs} className="text-green-500 m-auto" />
           <Image
             src={"/next.svg"}
             alt="next"
-            className="text-white text-center w-20 h-auto"
+            className="text-white text-center w-20 h-auto m-auto"
             width={200}
             height={200}
           />
           <Image
             src={"/tailwind.svg"}
             alt="tailwind"
-            className="text-white text-center w-20 h-auto"
+            className="text-white text-center w-20 h-auto m-auto"
             width={200}
             height={200}
           />
           <Image
             src={"/mongodb.svg"}
             alt="mongodb"
-            className="text-white text-center w-20 h-auto"
+            className="text-white text-center w-20 h-auto m-auto"
             width={200}
             height={200}
           />

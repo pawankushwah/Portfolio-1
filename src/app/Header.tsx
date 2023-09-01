@@ -22,6 +22,7 @@ export default function Header() {
       <RevealImage>
         <>
           <button
+            type="button"
             name="hamburger"
             className={`md:hidden fixed top-5 right-5 bg-gray-700 p-2 rounded-full focus:outline-none z-10 overflow-hidden`}
             onClick={openNavigationWindow}
@@ -91,7 +92,7 @@ export default function Header() {
       </div>
       {/* Navigation Window End */}
 
-      <Reveal style="w-full">
+      <Reveal style="w-full overflow-hidden">
         <div
           className={`border-b border-yellow-400 dark:border-yellow-400 hidden md:flex justify-center`}
         >

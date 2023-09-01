@@ -12,7 +12,7 @@ export default function About() {
       </div>
       </Reveal>
       <Reveal>
-      <div className="text-center text-xl md:text-3xl md:w-[90%] md:mx-auto p-10">
+      <div className="text-center text-xl md:text-2xl md:w-[90%] md:mx-auto p-10">
         A passionate web developer with a focus on crafting dynamic digital
         experiences. My toolkit includes ReactJS and NextJS for building
         engaging front-end interfaces, complemented by the versatility of

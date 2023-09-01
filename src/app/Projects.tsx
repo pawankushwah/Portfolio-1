@@ -1,5 +1,7 @@
 import Reveal from "@/components/Reveal";
 import RevealImage from "@/components/RevealImage";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export default function Projects() {
@@ -7,6 +9,7 @@ export default function Projects() {
     {
       metaData: {
         title: "CodeShop Ecommerce App",
+        url: "https://codeshop-ecommerce-application.vercel.app/",
         description:
           "Introducing Codeshop Ecommerce App, Codeshop allows you to explore an array of products showcased through vibrant images and engaging videos. Codeshop isn't just about browsing – it's about making your favorite items yours. Through an intuitive cart system.",
       },
@@ -21,6 +24,7 @@ export default function Projects() {
     {
       metaData: {
         title: "Text Utility App",
+        url: "https://pawankushwah.github.io/TextUtil",
         description:
           "Introducing the Text Utility App – where words find a new dimension and text manipulation becomes an art.",
       },
@@ -53,7 +57,10 @@ export default function Projects() {
             </Reveal>
 
             <div className=" max-w-screen bg-white p-5 py-20 flex flex-col lg:flex-row items-center justify-center text-black gap-2">
-              <div className="flex flex-col justify-center items-center">
+              <a
+                href={project.metaData.url}
+                className="flex flex-col justify-center items-center"
+              >
                 {/* project Title */}
                 <div className="font-bold text-3xl lg:text-4xl text-center mb-4">
                   <Reveal>
@@ -83,11 +90,14 @@ export default function Projects() {
                     </div>
                   </div>
                 </RevealImage>
-              </div>
-              <div className="w-3/4 text-xl md:text-3xl my-10 lg:w-1/2 lg:m-0 text-center">
+              </a>
+              <div className="w-3/4 text-xl md:text-2xl my-10 lg:w-1/2 lg:m-0 text-center">
                 {/* Project Description */}
                 <Reveal>
-                  <div>{project.metaData.description}</div>
+                  <>
+                    <div>{project.metaData.description}</div>
+                    <a href={project.metaData.url} className="text-blue-500 m-10">Visit Site <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                  </>
                 </Reveal>
               </div>
             </div>
