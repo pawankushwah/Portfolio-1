@@ -6,7 +6,6 @@ import Footer from "./Footer";
 import Projects from "./Projects";
 import MyStack from "./MyStack";
 import ScrollToTop from "@/components/ScrollToTop";
-import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
     <Contact/>
     <Footer/>
     <ScrollToTop/>
-    <AnimatedCursor/>
   </>
   )
 }
