@@ -48,17 +48,7 @@ export default function Projects() {
           id: 1,
           name: "Momato pic 1",
           src: "/images/project/3/pic1.png",
-        },
-        {
-          id: 2,
-          name: "Momato pic 2",
-          src: "/images/project/3/pic2.png",
-        },
-        {
-          id: 3,
-          name: "Momato pic 3",
-          src: "/images/project/3/pic3.png",
-        },
+        }
       ],
     },
     {
@@ -73,17 +63,7 @@ export default function Projects() {
           id: 1,
           name: "Secret notebook Pic 1",
           src: "/images/project/4/pic1.png",
-        },
-        {
-          id: 2,
-          name: "Secret notebook Pic 2",
-          src: "/images/project/4/pic2.png",
-        },
-        {
-          id: 3,
-          name: "Secret notebook Pic 3",
-          src: "/images/project/4/pic3.png",
-        },
+        }
       ],
     },
   ];
